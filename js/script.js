@@ -7,7 +7,7 @@ async function fetchData() {
 		for(var i=0; i < 100; i++)
         {
 			table += "<tr>";
-			table += "<td>" + record.data[i].date +"</td>" 
+			table += "<td>" + (new Date(record.data[i].date)).toLocaleDateString('en-GB') +"</td>" 
 					+ "<td>" + record.data[i].areaName +"</td>" 
 					+ "<td>" + record.data[i].latestBy +"</td>"
                     + "<td>" + record.data[i].deathNew +"</td>";
